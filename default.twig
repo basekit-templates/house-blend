@@ -3,8 +3,17 @@
 
 <section class="page default">
 
+	{% include 'includes/header.twig' %}
+
+	<div class="wrapper">
+
+		<div class="main-zone-container">
+			{{zone('main')|raw}}
+			{% include 'includes/footer.twig' %}
+		</div>
+
+	</div>
 
 </section>
-
 
 {% endblock %}

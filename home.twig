@@ -3,16 +3,34 @@
 
 <section class="page home">
 
-		{% include 'includes/header.twig' %}
+			<!-- Header Include !-->
+	<header class="template-header">
 
-		<div class="wrapper">
-
-			<div class="main-zone-container">
-				{{zone('main')|raw}}
-				{% include 'includes/footer.twig' %}
+		<div class="header-content">
+			<div class="company-info">
+				{{widget('logo', 'companylogo', {"defaultlogo": asset('images/logo.png')})|raw}}
+				{{widget('companyname', 'companyname', {"business": "profile"})|raw}}
 			</div>
 
+			{{widget('content', 'header-subtext', {content: 'Sociis mid, aliquet, elementum pulvinar urna velit etiam ut odio vel cras a sagittis, porta! Ut lectus, quis rhoncus a mus odio phasellus velit! Hac pid penatibus odio cum lacus dis augue pellentesque hac proin auctor platea a turpis risus aenean augue, nunc lorem massa elementum, elementum pulvinar turpis! Parturient elementum et augue magnis tempor eros, sociis!', lines: 'all'})|raw}}
+
+			{{widget('button', 'header-button', {italic: false, text:'button', 'align':'widget-align-center'})|raw}}
 		</div>
+
+		<div class="nav">
+			{{widget('extendednavigation', 'navigationheader', {"align":"center"})|raw}}
+		</div>
+
+	</header>
+
+	<div class="wrapper">
+
+		<div class="main-zone-container">
+			{{zone('main')|raw}}
+			{% include 'includes/footer.twig' %}
+		</div>
+
+	</div>
 
 </section>
 

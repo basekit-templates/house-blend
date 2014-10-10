@@ -58,6 +58,10 @@ white-space: normal;
     width: 80%;
     margin: 0 auto;
 
+    @media @tablet {
+    	width: 90%;
+    }
+
     @media @mobile {
     	width: 100%;
     }
@@ -112,9 +116,11 @@ body {
 	.main-zone-container {
 		background-color: @color-swatch1;
 		padding: 80px;
+		margin-bottom: 60px;
 
 		@media @tablet {
 			padding: 80px 20px;
+			margin-bottom: 40px;
 		}
 
 		@media @mobile {
@@ -126,7 +132,26 @@ body {
 		}
 	}
 
+// -----------------------------
+// #Default page settings
+// -----------------------------
 
+section.default {
+	.template-header .header-content {
+		padding: 50px 40px 25px 40px;
+		background-color: hsla(hue(@color-swatch7), saturation(@color-swatch7), lightness(@color-swatch7), 0.7);
+		width: 80%;
+		margin-bottom: 0px;
+
+		@media @tablet {
+		width: 90%;
+		}
+
+		@media @mobile {
+		width: 100%;
+		}
+	}
+}
 
 // -----------------------------
 // #Header
@@ -298,6 +323,7 @@ body {
 
 	@media @tablet {
 		padding: 30px 0px;
+		width: 90%;
 	}
 
 	@media @mobile {
@@ -527,6 +553,7 @@ footer.template-footer {
 	padding: 0;
 	color: @font-swatch1-color;
 	text-align: center;
+	margin-top: 20px;
 
 	.wrapper {
 		border-top: 2px solid @color-swatch3;
