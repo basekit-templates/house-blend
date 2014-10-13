@@ -247,12 +247,19 @@ button.btn,
 	line-height: inherit;
 }
 
+.widget.twitter .twitter-content a,
+.widget.twitter .twitter-content p a {
+	font-size: @font-swatch5-font-size;
+}
+
 .widget.clicktocall a {
 	padding: 20px;
 	background-color: @color-swatch3;
 	color: @color-swatch1;
+	background-image: none;
 	&:hover {
 		background-color: lighten(@color-swatch3,20%);
+		padding: 20px;
 	}
 }
 
@@ -262,6 +269,7 @@ button.btn,
 .widget.clicktocall a {
 	@media @mobile {
 		background-color: @color-swatch3;
+		background-image: none;
 	}
 }
 
