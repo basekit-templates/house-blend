@@ -341,7 +341,6 @@ section.default {
     @media @tablet {
         background-color: @color-swatch2;
 		border: 1px solid fade(@color-swatch1, 20%);
-		.border-radius(6px);
 		padding: 11px 9px 0;
 		position: absolute;
 		display: inline-block;
@@ -357,12 +356,10 @@ section.default {
 		overflow: hidden;
 		cursor: pointer;
 		outline: none;
-		.transition( all, 0.5s, ease);
         &:hover {
            cursor: pointer;
            background-color: fade(@color-swatch6, 80%);
 			border: 1px solid fade(@color-swatch1, 30%);
-			.transition( all, 0.5s, ease);
         }
         &:after, &:before {
             content: '';
