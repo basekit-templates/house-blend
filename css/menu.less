@@ -65,12 +65,18 @@
 	}
 	.menu-subsection {
 		padding: 0;
+		@media @tablet {
+			text-align: center;
+		}
 	}
 	.menu-item-image-wrap {
 		background-image: none !important;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 240px;
 		img {
-			max-height: 180px;
-			border: 7px solid @color-swatch1;
+			max-height: 100%;
 			margin-bottom: 20px;
 		}
 	}
