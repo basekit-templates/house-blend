@@ -438,7 +438,12 @@ section.default {
 	}
 }
 
-
+.widget .extendednavigation ul li, 
+.widget .navigation ul li {
+	@media @tablet {
+		border-bottom: 1px solid fade(@color-swatch2, 20%);
+	}
+}
 
 // The rest of the nav styles
 

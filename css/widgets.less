@@ -465,7 +465,7 @@ footer .widget.profile .bk-profile-socialicons span a {
 
 .widget.responsiveslideshow {
 	span.btn-play, span.btn-play.pause, &:hover span.btn-play, {
-		top: 42%;
+		top: 41%;
 		background: transparent;
 	}
 	// Main
@@ -533,6 +533,25 @@ footer .widget.profile .bk-profile-socialicons span a {
 				cursor: pointer;
 			}
 		}
+	}
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-play {
+	width: 10%;
+	height: 60px;
+	left: 46%;
+	color: white;
+}
+
+.widget.responsiveslideshow .btn-play.pause:after,
+.widget.responsiveslideshow .btn-play:after {
+	background-color: @color-swatch2;
+	line-height: 60px;
+}
+
+.widget.responsiveslideshow .btn-play.pause:after {
+	@media @mobile {
+		line-height: 40px;
 	}
 }
 
