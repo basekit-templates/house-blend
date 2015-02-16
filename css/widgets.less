@@ -80,7 +80,7 @@ textarea,
 .bottom-profile .widget.profile form,
 .delivery {
 	border: 2px solid @color-swatch3;
-	padding: 30px 30px 50px;
+	padding: 30px 30px 40px;
 	margin: 0 0 20px;
 	border-radius: 0;
 	@media @mobile {
@@ -240,15 +240,20 @@ button.btn,
 	border: 2px solid @color-swatch3;
 	color: @font-swatch7-color;
 	border-radius: 0;
+	padding: 0px 10px 0px 40px;
 	&:hover {
 		background-position: 14px center;
 		background-color: lighten(@color-swatch3,20%);
 	}
 }
 
+.widget.clicktocall a, 
 .widget.tweet a {
-	padding: 20px 10px 20px 40px;
-	line-height: 50px;
+	padding: 10px 10px 10px 40px;
+}
+
+.widget.clicktocall a {
+	padding: 10px 10px 10px 10px;
 }
 
 .widget.twitter .twitter-content a,
@@ -262,14 +267,11 @@ button.btn,
 }
 
 .widget.clicktocall a {
-	padding: 20px;
 	background-color: @color-swatch3;
 	color: @font-swatch7-color;
 	background-image: none;
-	line-height: 50px;
 	&:hover {
 		background-color: lighten(@color-swatch3,20%);
-		padding: 20px;
 	}
 }
 

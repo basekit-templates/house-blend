@@ -254,7 +254,7 @@ a.btn.ecom-product-go-to-checkout-btn {
         border: 2px solid @color-swatch3;
 		background-color: @color-swatch3;
 		width: 170px;
-		padding: 10px 15px 10px 37px;
+		padding: 0 15px 0 37px;
 		background-image: image('/images/basket-white.svg');
 		background-repeat: no-repeat;
         background-position: 14% 48%;
@@ -351,17 +351,14 @@ a.btn.ecom-product-go-to-checkout-btn {
     // Remove Button
 
     .ecombasket-remove-button {
-        background-color: @color-swatch3;
-        color: @color-swatch1;
+        color: @font-swatch5-color;
+        background-color: transparent;
         display: inline-block;
         font-size: bkscale(@font-swatch5-font-size, 0.8);
         text-decoration: none;
-        padding: 0 0.6em;
+        padding: 0;
         border: none;
         line-height: 1.4;
-        &:hover {
-            background-color: darken(@color-swatch3, 10%);
-        }
     }
 
     // View Basket button
@@ -1081,4 +1078,9 @@ button.btn.basket-summary-submit {
 // Continue shopping button
 a.basket-summary-empty-cta.btn {
     padding: 10px 45px;
+}
+
+// View Basket Button
+.btn.ecombasket-summary-link {
+    padding: 10px 40px;
 }
