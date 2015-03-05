@@ -62,7 +62,7 @@
             "font-family": "\"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
             "font-size": "32px",
             "font-weight": "700",
-            "line-height": "150%",
+            "line-height": "48px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
@@ -70,7 +70,7 @@
             "font-family": "\"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
             "font-size": "28px",
             "font-weight": "600",
-            "line-height": "150%",
+            "line-height": "42px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
@@ -123,7 +123,7 @@
             "font-family": "\"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
             "font-size": "40px",
             "font-weight": "700",
-            "line-height": "150%",
+            "line-height": "60px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit"
         },
@@ -131,7 +131,7 @@
             "font-family": "\"Crimson Text\", \"Times New Roman\", serif",
             "font-size": "21px",
             "font-weight": "400",
-            "line-height": "130%",
+            "line-height": "28px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit"
         },
@@ -139,7 +139,7 @@
             "font-family": "\"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
             "font-size": "50px",
             "font-weight": "700",
-            "line-height": "150%",
+            "line-height": "75px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit"
         }
