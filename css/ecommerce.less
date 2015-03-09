@@ -754,9 +754,9 @@ a.btn.ecom-product-go-to-checkout-btn {
 	    }
 	    @supports (-moz-appearance:meterbar) and (background-blend-mode:difference,normal) {
 			// All the classes that you've added a custom dropdown arrow to
-			.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select, 
+			.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select,
 			select,
-			.svg .widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select, 
+			.svg .widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select,
 			.svg select {
 			// Remove the arrow added to the background
 			background-image: none;
@@ -775,10 +775,16 @@ a.btn.ecom-product-go-to-checkout-btn {
         padding: 0 20px;
 
 	    &:hover {
+
 	    	background-color: lighten(@color-swatch3,20%);
             border: 3px solid lighten(@color-swatch3,20%);
-
             & span.text {
+                color: @color-swatch1;
+            }
+
+            @media @tablet {
+                background-color: @color-swatch3;
+                border: 3px solid @color-swatch3;
                 color: @color-swatch1;
             }
 	    }
@@ -960,7 +966,7 @@ a.btn.ecom-product-go-to-checkout-btn {
 		}
 
 		tr:last-child td:first-child {
-			@media (max-width: 360px) { 
+			@media (max-width: 360px) {
 				display: none;
 			}
 		}
