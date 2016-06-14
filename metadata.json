@@ -1,6 +1,7 @@
 {
 	"name":"House Blend",
 	"thumbnail":"house-blend.png",
+        "screenshot":"house-blend-screenshot.jpg",
     "tags": { "en": ["coffee shop", "bar", "cafe"] },
     "pageTypes":["home"],
     "templateType":"standard",
