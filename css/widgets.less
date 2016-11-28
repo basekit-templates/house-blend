@@ -126,6 +126,51 @@ textarea,
 	}
 }
 
+// Advanced Contact Form
+
+.advancedcontactform__form-group {
+	margin-bottom: 10px
+}
+
+// Select
+.advancedcontactform select {
+	display: block;
+	width: auto;
+    height: 35px;
+    margin: 10px 0 20px;
+    padding: 8px 33px 8px 8px;
+    border: 1px solid darken(@color-swatch1,10%);
+    background-color: darken(@color-swatch1,4%);
+    color: @color-swatch5;
+    cursor: pointer;
+    min-width: 20%;
+    &:focus {
+		outline: 0;
+      	}
+      	@media @mobile {
+          	width: 100%;
+      	}
+	  	&::-ms-expand {
+	      	display: none;
+	  	}
+	  	&[name="displayCount"] {
+	      	margin-bottom: 0;
+	  	}
+	 @supports (-moz-appearance:meterbar) and (background-blend-mode:difference,normal) {
+	// All the classes that you've added a custom dropdown arrow to
+	.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select,
+	select,
+	.svg .widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select,
+	.svg select {
+	// Remove the arrow added to the background
+	background-image: none;
+	}
+}
+}
+
+
+
+
 // -----------------------------
 // #Buttons
 // -----------------------------
@@ -153,7 +198,8 @@ button.btn,
 .blog-post-more-link a,
 .ecombasket-checkout-link,
 .widget.ecomcheckout .checkout-order-button,
-.blog-list-footer a {
+.blog-list-footer a,
+.advancedcontactform button {
 	padding: 0 45px;
 	background-color: @color-swatch3;
 	border: 2px solid @color-swatch3;
