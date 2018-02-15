@@ -136,9 +136,10 @@ textarea,
 .advancedcontactform select {
 	display: block;
 	width: auto;
-    height: 35px;
+    height: 40px;
+    line-height: 1;
     margin: 10px 0 20px;
-    padding: 8px 33px 8px 8px;
+    padding: 0 33px 0 8px;
     border: 1px solid darken(@color-swatch1,10%);
     background-color: darken(@color-swatch1,4%);
     color: @color-swatch5;
@@ -150,9 +151,6 @@ textarea,
       	@media @mobile {
           	width: 100%;
       	}
-	  	&::-ms-expand {
-	      	display: none;
-	  	}
 	  	&[name="displayCount"] {
 	      	margin-bottom: 0;
 	  	}

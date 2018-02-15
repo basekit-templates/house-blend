@@ -118,9 +118,10 @@ a.btn.ecom-product-go-to-checkout-btn {
 .productlist-filter,
 .delivery {
 	select {
-		height: 35px;
+		height: 40px;
 		margin-bottom: 12px;
-	    padding: 8px 33px 8px 8px;
+        line-height: 1;
+	    padding: 0 33px 0 8px;
 	    border: 1px solid @color-swatch3;
 	    background-color: @color-swatch1;
 	    color: @color-swatch5;
@@ -135,11 +136,8 @@ a.btn.ecom-product-go-to-checkout-btn {
 		background-image: none;
 		}
 		@media @mobile {
-			        width: 100%;
+			 width: 100%;
 	    }
-	}
-	select::-ms-expand {
-	    display: none;
 	}
 	select[name="displayCount"] {
 	    margin-bottom: 0;
@@ -196,7 +194,7 @@ a.btn.ecom-product-go-to-checkout-btn {
         input {
         	position: relative;
         	max-width: 170px;
-            height: 35px;
+            height: 40px;
             border: 1px solid @color-swatch3;
         	background-color: @color-swatch1;
         	-webkit-appearance: none;
@@ -732,9 +730,10 @@ a.btn.ecom-product-go-to-checkout-btn {
 	.ecom-product-info .ecom-product-variation select {
 		display: block;
 		width: auto;
-    	height: 35px;
+    	height: 40px;
+        line-height: 1;
     	margin-bottom: 12px;
-        padding: 8px 33px 8px 8px;
+        padding: 0 33px 0 8px;
         border: 1px solid darken(@color-swatch1,10%);
         background-color: darken(@color-swatch1,4%);
         color: @color-swatch5;
