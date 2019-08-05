@@ -1,5 +1,6 @@
 {
 	"name":"House Blend",
+	"versionTenCompatible": 1,
 	"thumbnail":"house-blend.png",
         "screenshot":"house-blend-screenshot.jpg",
     "tags": { "en": ["coffee shop", "bar", "cafe"] },
