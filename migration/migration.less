@@ -2,7 +2,6 @@
 // Migration Styles
 // -----------------------------
 
-
 #migrated-site {
 
 
@@ -11,15 +10,18 @@
 
 
 // Template wrapper (replace with corresponding template classes)
-.main.wrapper {
+.wrapper.main-zone-container {
   width: 100%;
   max-width: 100%;
   margin: 0;
 }
   
 // Main content spacing (replace with corresponding template class)
-.main {
+.main-zone-container {
+    
+//   padding: 0 80px 10px;
   padding: 0;
+ 
 }
 
 // Widget overflow to allow 10S overlays to display correctly
@@ -35,11 +37,11 @@
 
 
 // Replace with corresponding template values
-@container-width: 960px;
+@container-width: 100%;
 
-@spacing__first--desktop: 40px;
-@spacing__first--tablet:  30px;
-@spacing__first--mobile:  20px;
+@spacing__first--desktop: 0;
+@spacing__first--tablet:  0;
+@spacing__first--mobile:  0;
 
 @spacing--other: 30px;
 
@@ -49,23 +51,46 @@
 #page-zones__main:empty,
 #page-zones__main > .widget:not(.row),
 .row:not(.widget):not(.row--width-no-padding) .row__container {
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 80px;
+  padding-right: 80px;
   max-width: @container-width;
-  width: 90%;
+  width: 100%;
+  @media @tablet {
+      max-width: 100%;
+      padding: 20px;
+  }
+  
+  @media @mobile {
+    padding: 10px;
+  }
 }
 
+.page.default {
+    #page-zones__main > .widget.row:first-child .row__container {
+        padding-top:60px;
+          @media @tablet {
+              padding-top: 20px;
+          }
+          
+          @media @mobile {
+            padding-top: 10px;
+          }
+    }
+}
 
 // Move spacing to first widget in the main zone (not sections)
 &.edit #page-zones__main-overlay + .widget:not(.row),
 #page-zones__main > .widget:not(.row):first-child {
   margin-top: @spacing__first--desktop;
+  padding-top: 60px;
 
   @media @tablet {
     margin-top: @spacing__first--tablet;
+    padding-top: 0;
   }
   @media @mobile {
     margin-top: @spacing__first--mobile;
+    padding-top: 0;
   }
 }
 
